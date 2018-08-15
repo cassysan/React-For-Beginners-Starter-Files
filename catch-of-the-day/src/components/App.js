@@ -30,8 +30,8 @@ class App extends React.Component {
     //add to order or update the # in order
     order[key] = order[key] +1 || 1;
     // call setstate to update the state object
-    this.setState({ order });
-  }
+    this.setState({ order: order });
+  };
   render() {
     return (
       <div className="catch-of-the-day">
